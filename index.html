@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CityCare Hospital</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f7fb;
+    color: #243447;
+}
+header {
+    background: #087e8b;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+header h1 { margin: 0 0 8px; }
+nav {
+    background: #05616b;
+    padding: 12px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 24px auto;
+}
+.banner {
+    background: #dff5f3;
+    padding: 22px;
+    border-radius: 10px;
+    border-left: 5px solid #087e8b;
+}
+.doctors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000012;
+}
+.card h3 { color: #087e8b; margin-top: 0; }
+.tag {
+    display: inline-block;
+    background: #e1f4ed;
+    color: #176b4d;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+.slot {
+    background: #eaf2ff;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+.announcement {
+    background: #fff3cd;
+    border-left: 5px solid #e6a700;
+    padding: 16px;
+    margin: 12px 0;
+    border-radius: 5px;
+}
+footer {
+    background: #05616b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+.release {
+    color: #bdebe5;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>CityCare Hospital</h1>
+    <p>Your Health, Our Priority</p>
+    <p>24/7 Emergency Care | Experienced Doctors | Patient Support</p>
+</header>
+
+<nav>
+    <a href="#doctors">Our Doctors</a>
+    <a href="#appointments">Appointment Slots</a>
+    <a href="#announcements">Announcements</a>
+</nav>
+
+<div class="container">
+    <section class="banner">
+        <h2>Welcome to CityCare Hospital</h2>
+        <p>Find the right specialist and check consultation timings
+        before planning your visit.</p>
+        <p><strong>Outpatient hours:</strong> Monday–Saturday, 9:00 AM–5:00 PM</p>
+    </section>
+
+    <h2 id="doctors">Our Doctors and Specializations</h2>
+    <section class="doctors">
+        <div class="card">
+            <h3>Dr. Priya Sharma</h3>
+            <p><span class="tag">Cardiology</span></p>
+            <p>Experience: 12 years</p>
+            <p>Consultation: 9:00 AM–12:00 PM</p>
+        </div>
+
+        <div class="card">
+            <h3>Dr. Arun Kumar</h3>
+            <p><span class="tag">Dermatology</span></p>
+            <p>Experience: 8 years</p>
+            <p>Consultation: 10:00 AM–1:00 PM</p>
+        </div>
+
+        <div class="card">
+            <h3>Dr. Meera Raj</h3>
+            <p><span class="tag">Pediatrics</span></p>
+            <p>Experience: 10 years</p>
+            <p>Consultation: 2:00 PM–5:00 PM</p>
+        </div>
+    </section>
+
+    <h2 id="appointments">Available Appointment Slots</h2>
+    <section class="doctors">
+        <div class="card">
+            <h3>Cardiology</h3>
+            <div class="slot">9:00 AM — Available</div>
+            <div class="slot">10:00 AM — Available</div>
+            <div class="slot">11:00 AM — Limited slots</div>
+        </div>
+
+        <div class="card">
+            <h3>Dermatology</h3>
+            <div class="slot">10:00 AM — Available</div>
+            <div class="slot">11:30 AM — Available</div>
+            <div class="slot">12:30 PM — Limited slots</div>
+        </div>
+
+        <div class="card">
+            <h3>Pediatrics</h3>
+            <div class="slot">2:00 PM — Available</div>
+            <div class="slot">3:00 PM — Available</div>
+            <div class="slot">4:00 PM — Limited slots</div>
+        </div>
+    </section>
+
+    <h2 id="announcements">Hospital Announcements</h2>
+    <div class="announcement">
+        <strong>Health Check-up Camp:</strong>
+        Free blood pressure screening this Saturday.
+    </div>
+    <div class="announcement">
+        <strong>Patient Notice:</strong>
+        Please arrive 15 minutes before your consultation.
+    </div>
+    <div class="announcement">
+        <strong>Help Desk:</strong>
+        Contact 044-4567-8900 for appointment enquiries.
+    </div>
+</div>
+
+<footer>
+    <p>CityCare Hospital | Caring for Every Patient</p>
+    <p class="release">Release v1</p>
+</footer>
+
+</body>
+</html>
